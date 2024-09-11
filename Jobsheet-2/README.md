@@ -49,7 +49,7 @@ class Mahasiswa {
 }
 ~~~
 
-### setter method
+### Setter method
 #### digunakan untuk menetapkan nilai ke properti $nama dari objek saat ini. Setiap kali kamu ingin mengubah nama dari objek, kamu dapat menggunakan fungsi ini dan memberikan nilai baru sebagai parameter
 
 ~~~ php
