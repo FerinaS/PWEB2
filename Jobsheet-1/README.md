@@ -365,6 +365,33 @@ echo $mahasiswa->aksesFitur();
 ### Output
 ![Screenshot 2024-09-11 065438](https://github.com/user-attachments/assets/d9457d40-1e78-41e3-8e23-f8732c622fea)
 
+## Abstraction
+### Class dan atribut
+#### Mendefinisikan sebuah kelas  dan memiliki atribut 
 
+~~~ php
+// Abstraction class Pengguna
+abstract class Pengguna {
+    //menambhakan atribut
+   public $nama;
+~~~
 
+### method getter
+#### digunakan untuk mengambil atau mengakses nilai dari properti yang ada di dalam sebuah objek. Fungsi ini akan mengembalikan sebuah string
 
+~~~ php
+//mengambil nilai dari atribut/properti
+public function getNama() {
+        return  $this->nama;
+    }
+~~~
+
+### Method setter
+#### digunakan untuk menetapkan nilai ke properti dari objek saat ini. Setiap kali kamu ingin mengubah nama dari objek, kamu dapat menggunakan fungsi ini dan memberikan nilai baru sebagai parameter.
+
+~~~ php
+//mengubah nilai dari atribut/properti
+public function setNama($nama) {
+        $this->nama = $nama;
+    }
+~~~
