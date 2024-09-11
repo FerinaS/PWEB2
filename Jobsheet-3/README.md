@@ -223,7 +223,28 @@ echo "Student ID : " . $student->getStudentID();
 
 
 
+## Abstraction
+### Class dan atribut
+#### Mendefinisikan sebuah kelas  dan memiliki atribut 
 
+~~~ php
+// class abstrak Course
+abstract class Course {
+    protected $courseName;
+~~~
+
+### method getter
+#### digunakan untuk mengambil atau mengakses nilai dari properti yang ada di dalam sebuah objek. Fungsi ini akan mengembalikan sebuah string
+
+~~~ php
+// method abstrak yang harus diimplementasikan oleh kelas turunan
+    abstract public function getCourseDetails();
+~~~
+
+### Method setter
+#### digunakan untuk menetapkan nilai ke properti dari objek saat ini. Setiap kali kamu ingin mengubah nama dari objek, kamu dapat menggunakan fungsi ini dan memberikan nilai baru sebagai parameter.
+
+~~~ php
 
 
 
