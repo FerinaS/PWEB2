@@ -222,7 +222,7 @@ Class Person {
 ~~~
 
 ### Constructor
-#### konstruktor ini akan di panggil secara otomatis untuk menganalisasi nilai atribut $nama, $nim, dan $jurusan dari objek tersebut saat membuat objek baru dari kelas Mahasiswa
+#### konstruktor ini akan di panggil secara otomatis untuk menganalisasi nilai atribut $name dari objek tersebut saat membuat objek baru dari kelas Mahasiswa
 
 ~~~ php
 //metode construct untuk menginisialisasi
