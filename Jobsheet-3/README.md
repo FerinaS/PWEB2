@@ -451,7 +451,7 @@ echo $offlineCourse->getCourseDetails() . "<br>"; // output
 ### Output
 ![Screenshot 2024-09-12 091735](https://github.com/user-attachments/assets/fb6711a8-b9fd-4eed-9f14-2de39201506d)
 
-## Tugas
+## 5.Tugas
 ### Class dan atribut
 #### Mendefinisikan sebuah kelas  dan memiliki atribut 
 ~~~ php
