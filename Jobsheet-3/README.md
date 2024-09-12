@@ -1,4 +1,4 @@
-![Screenshot 2024-09-12 095840](https://github.com/user-attachments/assets/62847684-c4cb-4498-8727-7144a1c4c480)# JOBSHEET-3
+# JOBSHEET-3
 
 ## 1. Inheritance
 ### Class dan atribut
@@ -691,5 +691,5 @@ echo "<hr>";
 ?>
 ~~~
 ### Output
-
+![Screenshot 2024-09-12 095840](https://github.com/user-attachments/assets/62847684-c4cb-4498-8727-7144a1c4c480)
 
