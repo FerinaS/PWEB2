@@ -160,7 +160,7 @@ public function getNama() {
 ~~~
 
 ### Class Dosen dan Atribut
-#### Mendefinisikan sebuh kelas Dosen yang merupakan kelas turunan?pewaris dari kelas Pengguna
+#### Mendefinisikan sebuh kelas Dosen yang merupakan kelas turunan pewaris dari kelas Pengguna
 ~~~ php
 //mewarisi semua atribut/properti dari kelas pengguna
 class Dosen extends Pengguna{
