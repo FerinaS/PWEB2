@@ -64,8 +64,10 @@ echo "TAMPILAN DATA BARU<br>";
 echo $mahasiswa1->tampilkanData();
 ~~~
 ### Output
-![Screenshot 2024-09-11 081429](https://github.com/user-attachments/assets/75257e75-023a-4854-8543-27ef8de09726)
-## 2. Tugas
+![Screenshot 2024-09-12 082417](https://github.com/user-attachments/assets/6cb7e647-708c-47a0-b2d3-51a86456f451)
+
+
+## 2. Tugas Dosen
 ### Class dan Atribut
 #### Mendefinisikan sebuah kelas yang bernama Dosen dan memiliki atribut $nama, $nim, $NIP, dan $mataKuliah
 ~~~ php
@@ -76,17 +78,7 @@ class Dosen {
     public $nip;
     public $mataKuliah;
 ~~~
-### Constructor
-#### konstruktor ini akan di panggil secara otomatis untuk menganalisasi nilai atribut $nama, $nip, dan $mataKuliahn dari objek tersebut saat membuat objek baru dari kelas Dosen
-~~~ php
-   //metode construct untuk menginisialisasi
-    public function __construct($nama, $nip, $mataKuliah) {
-        //properties ini akan diisi value dari parameter $nama, $nip, dan $mataKuliah
-        $this->nama = $nama;
-        $this->nip= $nip;
-        $this->mataKuliah = $mataKuliah;
-    }
-~~~
+
 ### Method
 #### Method ini digunakan untuk menampilkan data Dosen yang telah di inputkan kedalam bentuk string
 ~~~ php
@@ -96,14 +88,45 @@ class Dosen {
             return "Nama: $this->nama" . "<br>" . "NIP: $this->nip" . "<br>" . "Mata Kuliah: $this->mataKuliah" . "<hr>";
         }
 ~~~
+
+### Setter method
+#### digunakan untuk menetapkan nilai ke properti $nama dari objek saat ini. Setiap kali kamu ingin mengubah nama dari objek, kamu dapat menggunakan fungsi ini dan memberikan nilai baru sebagai parameter
+
+~~~ php
+ //metode untuk mengatur nama
+    public function setNama($nama) {
+        $this->nama = $nama;
+    }
+
+    //metode untuk mengatur NIP
+    public function setNip($nip) {
+        $this->nip = $nip;
+    }
+
+    //metode untuk mengatur Mata Kuliah
+    public function setMataKuliah($mataKuliah) {
+        $this->mataKuliah = $mataKuliah;
+    }
+}
+~~~
+
 ### Objek dan akses untuk menampilkan
 #### Objek digunakan untuk menyimpan informasi terkait, seperti nama, NIP, dan mataKuliah dari Dosen. Lalu di tampilkan hasil nya
 ~~~ php
 // Instansiasi objek dari class Dosen
-$dosen1 = new Dosen("Pak Lutfi", "11009", "Desain Interaksi Pengguna");
+$dosen1 = new Dosen();
+// Mengisi nilai atribut menggunakan metode set
+$dosen1->setNama("Pak Lutfi");
+$dosen1->setNip("11009");
+$dosen1->setMataKuliah("Desain Interaksi Pengguna");
+
 //menampilkan data Dosen
 echo "TAMPILAN DATA DOSEN <br>";
 echo $dosen1->tampilkanDosen();
+
+?>
+
 ~~~
 ### Output
-![Screenshot 2024-09-11 082531](https://github.com/user-attachments/assets/128affbb-0e36-4f49-b8b3-673a184bf3b8)
+![Screenshot 2024-09-12 082914](https://github.com/user-attachments/assets/0f6aecb7-c115-4af5-bbdc-bf7a782946ac)
+
